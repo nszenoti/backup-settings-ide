@@ -1,0 +1,520 @@
+{
+  // VSCODE Editor Specific
+    "workbench.sideBar.location": "right",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.iconTheme": "material-icon-theme",
+    
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Operator Mono Book Italic, Dank Mono, Fira Code, Consolas, 'Courier New', monospace",
+    "editor.fontSize": 15,
+    "debug.console.fontSize": 15,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    //"editor.fontWeight": "400",
+
+    // START-- Minimalistic
+
+    //"breadcrumbs.enabled": true,
+    //"editor.cursorBlinking": "blink",
+    //"editor.folding": true,
+    //"editor.hideCursorInOverviewRuler": true,
+    "editor.minimap.enabled": true,
+    //"editor.occurrencesHighlight": false,
+    //"editor.roundedSelection": false,
+    //"editor.selectionHighlight": false,
+    //"editor.scrollBeyondLastLine": false,
+    //"explorer.decorations.colors": false,
+    //"explorer.openEditors.visible": 0,
+    //"window.zoomLevel": 0,
+    //"workbench.activityBar.visible": false,
+    //"workbench.editor.showIcons": false,
+    //"workbench.startupEditor": "none",
+    //"workbench.tree.renderIndentGuides": "none",
+    
+    // END-- Minimalistic
+
+    "todohighlight.isEnable": true,
+    "gitlens.hovers.annotations.enabled": false,   
+    
+    "material-icon-theme.folders.associations": {
+      "global_state": "global",
+      "ui": "layout",
+      "bloc": "controller"
+    },
+    
+  // Console Run File
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    },
+    // "yaml.schemas": {
+    //     "file:///c%3A/Users/nipuns/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    // },
+
+    // ----- Flutter & Dart -----
+    // Causes the debug view to automatically appear when a breakpoint is hit. This
+	// setting is global and not configurable per-language.
+	  "debug.openDebug": "openOnDebugBreak",
+    //"dart.flutterSdkPath": ".fvm/flutter_sdk",
+    //"dart.flutterSdkPath": "src/flutter",
+    // Remove .fvm files from search
+    "search.exclude": {
+        "**/.fvm": true
+    },
+    // Remove from file watching
+    "files.watcherExclude": {
+        "**/.fvm": true
+    },
+    "dart.flutterSdkPaths": ["/src/flutter", "/Users/nipuns/fvm/versions"],
+    "dart.previewFlutterUiGuides": true,
+    "dart.debugExternalPackageLibraries": true,
+    "dart.debugSdkLibraries": false,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": false,
+        // "editor.rulers": [
+        //     80
+        // ],
+        "editor.selectionHighlight": true,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": true,
+        "editor.parameterHints.enabled": true,
+        "editor.acceptSuggestionOnEnter": "smart",
+    },
+    // "css.validate": false,
+    // "css.lint.emptyRules": "ignore",
+
+    "[json]": {
+      "editor.quickSuggestions": {
+        "strings": true
+      },
+      "editor.suggest.insertMode": "replace"
+    },
+
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": "off",
+      "strings": "off"
+    },
+    "editor.suggestOnTriggerCharacters": true,
+    "problems.showCurrentInStatus": true,
+    "editor.suggestSelection": "first",
+
+    // ----- Python -----
+    "[python]":{
+        "editor.formatOnSave": false
+    },
+    "python.defaultInterpreterPath": "C:\\Python310\\python.exe",
+
+
+  // THEME CUSTOM COLOR -------------- 
+    
+    "workbench.colorCustomizations": {
+        //"editorError.foreground":   "#00000000",
+        //"editorWarning.foreground": "#00000000",
+        //"editorInfo.foreground":    "#00000000"
+        "editorWarning.foreground": "#ff0000",
+        "[GitHub Light]": {
+          //"editorError.foreground":   "#00000000",
+            //"editorWarning.foreground": "#00000000",
+            //"editorInfo.foreground":    "#00000000"
+          "editorWarning.foreground": "#968c4f",
+        },
+          
+    },
+
+    "editor.tokenColorCustomizations": {
+        // "[One Dark Pro Darker]": {
+        //     "functions": "#7b9ad7",
+        //     "variables": "#df6695",
+        //     "strings": "#92BA91",
+        //     "types": "#d3b76e",
+        //     "keywords": "#ec91ae",
+        //     //"keywords": "#c057c0",
+        //     "textMateRules": [
+        //       {
+        //         "name": "ControlKeywords",
+        //         "scope": ["keyword.control.dart", "keyword.control.catch-exception.dart"],
+        //         // "settings": { "fontStyle": "italic", "foreground": "#bd83d2" }
+        //         //"settings": { "fontStyle": "italic", "foreground": "#D7A1C2" } 
+        //         "settings": { "fontStyle": "italic", "foreground": "#D0968C" }
+        //       },
+        //       {
+        //         "name": "Annotation",
+        //         "scope": ["storage.type.annotation.dart", "entity.name.function.decorator.python", "keyword.other.python"],
+        //         "settings": { "foreground": "#49b998" }
+        //       },
+        //       {
+        //         "name": "ModifierKeywords",
+        //         "scope": ["storage.modifier.dart"],
+        //         "settings": { "foreground": "#4eb0bb", "fontStyle": "italic" }
+        //       },
+        //       {
+        //         "name": "DeclarationKeywords",
+        //         "scope": ["keyword.declaration.dart"],
+        //         // "settings": { "foreground": "#bd83d2" }
+        //         "settings": { "foreground": "#df7a93", "fontStyle": "italic" }
+        //       },
+              
+        //       {
+        //         "name": "LanguageVariables",
+        //         "scope": ["variable.language.dart", "variable.language.python", "support.function.builtin.python"],
+        //         //"settings": { "foreground": "#4eb0bb", "fontStyle": "italic bold" }
+        //         "settings": { "foreground": "#4eb0bb", "fontStyle": "italic" }
+        //       },
+        //       {
+        //         "name": "LanguageConstants",
+        //         "scope": ["constant.numeric.dart"],
+        //         //"settings": { "foreground": "#CC9F93" }
+        //         "settings": { "foreground": "#C8AEDC" }
+        //       },
+        //       {
+        //         "name": "Import",
+        //         "scope": ["keyword.other.import.dart", "meta.declaration.dart", "keyword.control.import.python", "keyword.control.import.from.python"],
+        //         "settings": { "foreground": "#df7277" }
+        //       },
+        //       // {
+        //       //   "name": "import-string",
+        //       //   "scope": ["string.interpolated.single.dart", "string.interpolated.double.dart"],
+        //       //   "settings": { "foreground": "#7DDDB7" }
+        //       // },
+        //       {
+        //         "name": "interpolated exp",
+        //         "scope": ["string.interpolated.expression.dart"],
+        //         "settings": { "foreground": "#AAB2EE" }
+        //       },
+        //       {
+        //         "name": "PrimitiveKeywords", // Void
+        //         "scope": ["storage.type.primitive.dart"],
+        //         "settings": { "foreground": "#C17B8D" }
+        //       },
+        //       {
+        //         "name": "ParameterFunction",
+        //         "scope": ["variable.parameter.function.python", "meta.function.decorator.arguments.python", "meta.function-call.arguments.python"],
+        //         "settings": { "foreground": "#90bbd2" }
+        //       },
+        //       {
+        //         "name": "magic-python",
+        //         "scope": ["support.function.magic.python", "support.variable.magic.python"],
+        //         "settings": { "foreground": "#d77e8b" }
+        //       },
+              
+        //       {
+        //         "name": "python-function-call",
+        //         "scope": ["meta.function-call.python"],
+        //         "settings": { "foreground": "#d3b76e" }
+        //       },
+    
+        //       {
+        //         "name": "python-variable-declaration",
+        //         "scope": ["variable.other.readwrite"],
+        //         "settings": { "foreground": "#bfb9c0" }
+        //       },
+
+        //       {
+        //         "name": "Dart-Propery",
+        //         "scope": ["property.dart"],
+        //         "settings": { "foreground": "#EACCF0" }
+        //       },
+        //     ],
+        //  },
+         
+         "[GitHub Light], [Github Light Default]": {
+          "types": "#2578bc",
+          "keywords": "#de7f67",
+            "textMateRules": [
+              {
+                "name": "import-string",
+                "scope": ["string.interpolated.single.dart"],
+                "settings": { "foreground": "#6d8456" }
+              },
+              {
+                "name": "comments-double-slash",
+                "scope": ["comment.line.double-slash.dart"],
+                "settings": { "foreground": "#abadab", "fontStyle": "italic" }
+              },
+              {
+                "name": "ControlKeywords",
+                "scope": ["keyword.control.dart", "keyword.control.catch-exception.dart"],
+                "settings": { "fontStyle": "italic", "foreground": "#bd83d2" }
+              },
+              {
+                "name": "ModifierKeywords",
+                "scope": ["storage.modifier.dart"],
+                "settings": { "foreground": "#40a3ae", "fontStyle": "italic" }
+              },
+              {
+                "name": "LanguageConstants",
+                "scope": ["constant.numeric.dart"],
+                "settings": { "foreground": "#e3947e" }
+              },
+              {
+                "name": "annotation",
+                "scope": ["storage.type.annotation.dart"],
+                "settings": { "foreground": "#7ecae3" }
+              },
+              {
+                "name": "DeclarationKeywords",
+                "scope": ["keyword.declaration.dart"],
+                // "settings": { "foreground": "#bd83d2" }
+                "settings": { "foreground": "#4caa9a", "fontStyle": "italic" }
+              },
+              {
+                "name": "InterpolatedString",
+                "scope":["source.interpolation.expression.dart"],
+                "settings": {
+                  "foreground": "#ed42bf",
+                  
+                }
+              },
+              // {
+              //   "name": "Keywords", 
+              //   "scope":["keywords"],
+              //   "settings":{
+              //     "fontstyle" : "italic" 
+              //   }
+              // }
+              // {
+              //   "name": "Property"
+              //   "scope":
+              // }
+              // {
+              //   "name": "parameters",
+              //   "scope": ["variable.parameter"],
+              //   "settings": {
+              //     "foreground": "#c27e16",
+              //     //"fontStyle": "bold"
+              //   }
+              // }
+            ] 
+         }, 
+
+         "[One Dark Pro]": {
+          "functions": "#8daaea",
+          "variables": "#ABBCD0",
+          "strings": "#7CAC89",
+          "types": "#CDAB6F",
+          //"keywords": "#ec91ae",
+          "keywords": "#CF8EDF",
+          "textMateRules": [
+            {
+              "name": "ControlKeywords",
+              "scope": ["keyword.control.dart", "keyword.control.catch-exception.dart"],
+              "settings": { "fontStyle": "italic", "foreground": "#CF8EDF" }
+            },
+            {
+              "name": "Annotation",
+              "scope": ["storage.type.annotation.dart", "entity.name.function.decorator.python", "keyword.other.python"],
+              "settings": { "foreground": "#49b998" }
+            },
+            {
+              "name": "ModifierKeywords",
+              "scope": ["storage.modifier.dart"],
+              //"settings": { "foreground": "#4eb0bb", "fontStyle": "italic" }
+              "settings": { "foreground": "#CF8EDF", "fontStyle": "italic" }
+            },
+            {
+              "name": "DeclarationKeywords",
+              "scope": ["keyword.declaration.dart"],
+              // "settings": { "foreground": "#bd83d2" }
+              "settings": { "foreground": "#CF8EDF" }
+            },
+            {
+              "name": "VariableParameter",
+              "scope": ["variable.parameter"],
+              "settings": { "foreground": "#D08B9C"}
+            },
+            //-----------
+            {
+              "name": "LanguageVariables",
+              "scope": ["variable.language.dart"],
+              "settings": { "foreground": "#4eb0bb", "fontStyle": "italic" }
+            },
+            {
+              "name": "Import",
+              "scope": ["keyword.other.import.dart", "keyword.control.import.python", "keyword.control.import.from.python"],
+              "settings": { "foreground": "#df7277" }
+            },
+            {
+              "name": "Dart-Propery",
+              "scope": ["property.dart"],
+              "settings": { "foreground": "#EACCF0" }
+            },
+            {
+              "name": "interpolated exp",
+              "scope": ["string.interpolated.expression.dart"],
+              "settings": { "foreground": "#AAB2EE" }
+            },
+            {
+              "name": "PrimitiveKeywords", // Void
+              "scope": ["storage.type.primitive.dart"],
+              "settings": { "foreground": "#BC8EDF" }
+            },
+            
+          ],
+        },
+    },
+
+    "editor.semanticHighlighting.enabled": true,
+    "editor.semanticTokenColorCustomizations": {
+      "[One Dark Pro]": {
+        // // "enabled": true,
+        // "rules": {
+        //   //"keyword": "#ec91ae",
+        //   "variable": "#adc4c0",
+        // } 
+        "enabled": true,
+        "rules": {
+          "parameter.declaration": "#D08B9C",
+          "parameter": "#D08B9C",
+          "parameter.label": "#b09ea3",
+          "keyword": "#88b4bd",
+          // "keyword": "#ca8ed8",
+          // "keyword.control": "#ca8ed8",
+          // "keyword.modifier": "#ca8ed8",
+          "class": "#DBB979",
+          "comment": "#676768",
+          "typeParameter": "#282523",
+          "number": "#D779AE",
+          "string": "#7CAC89",
+          "source.interpolation": "#AAB2EE",
+          "variable.declaration":"#b99daa",
+          "variable:dart": "#b99daa",
+          "property.instance": "#ABBCD0", 
+          "property:dart": "#ABBCD0",
+          "property.annotation": "#cd80ba",
+          "annotation:dart": "#cd80ba",
+          "builtinConstant": "#e5a28d"
+        },
+      },
+    
+      // "[One Dark Pro Darker]": {
+      //   // // "enabled": true,
+      //   // "rules": {
+      //   //   //"keyword": "#ec91ae",
+      //   //   "variable": "#adc4c0",
+      //   // } 
+      //   "enabled": true,
+      //   "rules": {
+      //     //"parameter.declaration": "#df6695",
+      //     "parameter.declaration": "#b0b9b9",
+      //     //"parameter": "#c27e16",
+      //     "parameter": "#b0b9b9",
+      //     //"parameter.label": "#ba6ba3",
+      //     "parameter.label": "#a08f9b",
+      //     //"keyword": "#af82bc",
+      //     "keyword": "#c696a8",
+      //     "comment": "#687975",
+      //     "typeParameter": "#c7a17a",
+      //     "keyword.control": "#c696b4",
+      //     "keyword.modifier": "#40a3ae",
+      //     "number": "#c59082",
+      //     "string": "#92BA91",
+      //     "source.interpolation": "#AAB2EE",
+      //     "variable.declaration":"#b0b9b9",
+      //     "variable": "#b0b9b9",
+      //     "property.instance": "#d4b9df", 
+      //     "property.annotation": "#5aac93",
+      //     "property": "#dde3d3",
+      //     "builtinConstant": "#939cbd"
+      //   },
+      // },
+      "[GitHub Light] [Github Light Default]": {
+        "enabled": true,
+        "rules": {
+          //"parameter.declaration": "#df6695",
+          "parameter.declaration": "#b55c21",
+          //"parameter": "#c27e16",
+          "parameter": "#a7690b",
+          //"parameter.label": "#ba6ba3",
+          "parameter.label": "#8e7587",
+          "keyword": "#d8597d",
+          "keyword.control": "#d8597d",
+          "comment": "#adbaad",
+          "typeParameter": "#cd806b",
+          //"keyword.control": "#bd83d2",
+          "keyword.modifier": "#40a3ae",
+          "number": "#d3785f",
+          "string": "#0a8773",
+          "property.annotation": "#cd5252",
+          "source.interpolation": "#9e247e",
+          "variable.declaration":"#9e2449",
+          "variable": "#9e2449",
+          "property.instance": "#135064"
+        },
+      }
+    },
+
+    
+    "yaml.schemas": {
+      "file:///c%3A/Users/nipuns/.vscode/extensions/atlassian.atlascode-3.0.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "errorLens.enabledDiagnosticLevels": [
+      "error",
+      "info",
+      "warning"
+    ],
+    "errorLens.messageBackgroundMode": "message",
+    "errorLens.enabled": true,
+    "atlascode.jira.lastCreateSiteAndProject": {
+      "siteId": "",
+      "projectKey": ""
+    },
+    "sync.gist": "5705732ddf8c55505a432e3336a650b5",
+    "git.confirmSync": false,
+    "workbench.colorTheme": "GitHub Light",
+    //"git.path":["/Users/nipuns/AppData/Local/Programs/Git/mingw64/bin/git.exe"],
+}

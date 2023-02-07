@@ -1,0 +1,9 @@
+* Keyboard Shortcuts :
+  ----
+  -> acceptSelectedSuggestion : Enter   // removed this KeyBindings
+
+--------------
+
+* Settings Sync :
+  ------------- 
+  GIST ID: 5705732ddf8c55505a432e3336a650b5
