@@ -8,6 +8,7 @@
     "editor.fontFamily": "Operator Mono Book Italic, Dank Mono, Fira Code, Consolas, 'Courier New', monospace",
     "editor.fontSize": 15,
     "debug.console.fontSize": 15,
+    //"editor.fontWeight": "600",
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     //"editor.fontWeight": "400",
 
@@ -172,6 +173,12 @@
             //"editorWarning.foreground": "#00000000",
             //"editorInfo.foreground":    "#00000000"
           "editorWarning.foreground": "#968c4f",
+        },
+
+        "[Material Theme*]": {
+          //"sideBar.background": "#ff0000",
+          "editor.background": "#292929",
+          //"editor.background": "#212121",
         },
           
     },
@@ -406,6 +413,79 @@
             
           ],
         },
+        
+        // NOTE:- Disable Semantic Token Feature inorder to yse this below colors for Material Theme Darker
+        "[Material Theme Darker]": {
+          "functions": "#9ab3ea",
+          // "variables": "#ABBCD0",
+          "strings": "#9cc58c",
+          // "types": "#CDAB6F",
+          // //"keywords": "#ec91ae",
+          "keywords": "#d7a2eb",
+          "textMateRules": [
+            {
+              "name": "ControlKeywords",
+              "scope": ["keyword.control.dart", "keyword.control.catch-exception.dart"],
+              "settings": { "fontStyle": "italic", "foreground": "#81c0bc" }
+            },
+            {
+              "name": "Annotation",
+              "scope": ["storage.type.annotation.dart", "entity.name.function.decorator.python", "keyword.other.python"],
+              "settings": { "foreground": "#ac97e0" }
+            },
+            {
+              "name": "ModifierKeywords",
+              "scope": ["storage.modifier.dart"],
+              //"settings": { "foreground": "#4eb0bb", "fontStyle": "italic" }
+              "settings": { "foreground": "#d7a2eb", "fontStyle": "italic" }
+            },
+            {
+              "name": "DeclarationKeywords",
+              "scope": ["keyword.declaration.dart"],
+              // "settings": { "foreground": "#bd83d2" }
+              // c39bd2
+              "settings": { "foreground": "#d7a2eb" }
+            },
+            // {
+            //   "name": "VariableParameter",
+            //   "scope": ["variable.parameter"],
+            //   "settings": { "foreground": "#D08B9C"}
+            // },
+            // //-----------
+            {
+              "name": "LanguageVariables",
+              "scope": ["variable.language.dart"],
+              "settings": { "foreground": "#c67b82", "fontStyle": "italic" }
+            },
+            {
+              "name": "Import",
+              "scope": ["keyword.other.import.dart"],
+              "settings": { "foreground": "#cb826a" }
+            },
+            // {
+            //   "name": "Dart-Propery",
+            //   "scope": ["property.dart"],
+            //   "settings": { "foreground": "#EACCF0" }
+            // },
+            // {
+            //   "name": "interpolated exp",
+            //   "scope": ["string.interpolated.expression.dart"],
+            //   "settings": { "foreground": "#AAB2EE" }
+            // },
+            // {
+            //   "name": "PrimitiveKeywords", // Void
+            //   "scope": ["storage.type.primitive.dart"],
+            //   "settings": { "foreground": "#BC8EDF" }
+            // },
+            {
+              "name": "Numeric", 
+              "scope": ["constant.numeric.dart"],
+              "settings": {
+                "foreground": "#e67da1",
+              }
+            }
+          ],
+        },
     },
 
     "editor.semanticHighlighting.enabled": true,
@@ -508,13 +588,13 @@
       "warning"
     ],
     "errorLens.messageBackgroundMode": "message",
-    "errorLens.enabled": true,
+    "errorLens.enabled": false,
     "atlascode.jira.lastCreateSiteAndProject": {
       "siteId": "",
       "projectKey": ""
     },
     "sync.gist": "5705732ddf8c55505a432e3336a650b5",
     "git.confirmSync": false,
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Material Theme Darker",
     //"git.path":["/Users/nipuns/AppData/Local/Programs/Git/mingw64/bin/git.exe"],
 }
