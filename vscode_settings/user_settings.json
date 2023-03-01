@@ -113,7 +113,10 @@
     "files.watcherExclude": {
         "**/.fvm": true
     },
-    "dart.flutterSdkPaths": ["/src/flutter", "/Users/nipuns/fvm/versions"],
+    "dart.flutterSdkPaths": [
+      "/src/flutter",
+      "/Users/nipuns/fvm/versions"
+    ],
     "dart.previewFlutterUiGuides": true,
     "dart.debugExternalPackageLibraries": true,
     "dart.debugSdkLibraries": false,
@@ -167,7 +170,7 @@
         //"editorError.foreground":   "#00000000",
         //"editorWarning.foreground": "#00000000",
         //"editorInfo.foreground":    "#00000000"
-        "editorWarning.foreground": "#ff0000",
+        //"editorWarning.foreground": "#ff0000",
         "[GitHub Light]": {
           //"editorError.foreground":   "#00000000",
             //"editorWarning.foreground": "#00000000",
@@ -179,6 +182,11 @@
           //"sideBar.background": "#ff0000",
           "editor.background": "#292929",
           //"editor.background": "#212121",
+
+          "activityBar.background": "#272525",
+		      "activityBar.border": "#272525",
+
+          "sideBar.background": "#222222",
         },
           
     },
