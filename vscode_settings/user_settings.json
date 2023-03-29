@@ -581,7 +581,9 @@
           "source.interpolation": "#9e247e",
           "variable.declaration":"#9e2449",
           "variable": "#9e2449",
-          "property.instance": "#135064"
+          //"property.instance": "#135064", 
+          "property.instance": "#2a4669", 
+          "property.declaration": "#3c618d"
         },
       }
     },
@@ -603,6 +605,6 @@
     },
     "sync.gist": "5705732ddf8c55505a432e3336a650b5",
     "git.confirmSync": false,
-    "workbench.colorTheme": "Material Theme Darker",
+    "workbench.colorTheme": "GitHub Light",
     //"git.path":["/Users/nipuns/AppData/Local/Programs/Git/mingw64/bin/git.exe"],
 }
