@@ -5,7 +5,7 @@
     "workbench.iconTheme": "material-icon-theme",
     
     "editor.fontLigatures": true,
-    "editor.fontFamily": "Operator Mono Book Italic, Dank Mono, Fira Code, Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "Operator Mono, Dank Mono, Fira Code, Consolas, 'Courier New', monospace",
     "editor.fontSize": 15,
     "debug.console.fontSize": 15,
     //"editor.fontWeight": "600",
@@ -113,9 +113,12 @@
     "files.watcherExclude": {
         "**/.fvm": true
     },
+    "dart.flutterSdkPath": "/Users/nipunshah/Development/flutter/bin/flutter",
     "dart.flutterSdkPaths": [
-      "/src/flutter",
-      "/Users/nipuns/fvm/versions"
+      // "/src/flutter",
+      // "/Users/nipuns/fvm/versions",
+      //"/Users/$USER/fvm/versions",
+      "/Users/nipunshah/Development/flutter/bin/flutter"
     ],
     "dart.previewFlutterUiGuides": true,
     "dart.debugExternalPackageLibraries": true,
@@ -159,9 +162,10 @@
 
     // ----- Python -----
     "[python]":{
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
+        "editor.formatOnType": true
     },
-    "python.defaultInterpreterPath": "C:\\Python310\\python.exe",
+    //"python.defaultInterpreterPath": "C:\\Python310\\python.exe",
 
 
   // THEME CUSTOM COLOR -------------- 
@@ -287,7 +291,7 @@
         //     ],
         //  },
          
-         "[GitHub Light], [Github Light Default]": {
+        "[GitHub Light], [Github Light Default]": {
           "types": "#2578bc",
           "keywords": "#de7f67",
             "textMateRules": [
@@ -355,9 +359,9 @@
               //   }
               // }
             ] 
-         }, 
+        }, 
 
-         "[One Dark Pro]": {
+        "[One Dark Pro]": {
           "functions": "#8daaea",
           "variables": "#ABBCD0",
           "strings": "#7CAC89",
@@ -494,6 +498,74 @@
             }
           ],
         },
+
+        "[Night Owl]": {
+          //"variables": "#ABBCD0",
+          "strings": "#91d5d2",
+          "types": "#cfac78",
+          //"keywords": "#ec91ae",
+          //"keywords": "#CF8EDF",
+          "textMateRules": [
+            // {
+            //   "name": "ControlKeywords",
+            //   "scope": ["keyword.control.dart", "keyword.control.catch-exception.dart"],
+            //   "settings": { "fontStyle": "italic", 
+            //               //"foreground": "#CF8EDF"
+            //             }
+            // },
+          //   {
+          //     "name": "Annotation",
+          //     "scope": ["storage.type.annotation.dart", "entity.name.function.decorator.python", "keyword.other.python"],
+          //     "settings": { "foreground": "#49b998" }
+          //   },
+            // {
+            //   "name": "ModifierKeywords",
+            //   "scope": ["storage.modifier.dart"],
+            //   //"settings": { "foreground": "#4eb0bb", "fontStyle": "italic" }
+            //   "settings": { 
+            //     //"foreground": "#CF8EDF",
+            //    "fontStyle": "italic" }
+            // },
+            // {
+            //   "name": "DeclarationKeywords",
+            //   "scope": ["keyword.declaration.dart"],
+            //   // "settings": { "foreground": "#bd83d2" }
+            //   "settings": { "foreground": "#CF8EDF" }
+            // },
+          //   {
+          //     "name": "VariableParameter",
+          //     "scope": ["variable.parameter"],
+          //     "settings": { "foreground": "#D08B9C"}
+          //   },
+          //   //-----------
+            {
+              "name": "LanguageVariables",
+              "scope": ["variable.language.dart"],
+              "settings": { "foreground": "#c7799d", "fontStyle": "italic" }
+            },
+          //   {
+          //     "name": "Import",
+          //     "scope": ["keyword.other.import.dart", "keyword.control.import.python", "keyword.control.import.from.python"],
+          //     "settings": { "foreground": "#df7277" }
+          //   },
+          //   {
+          //     "name": "Dart-Propery",
+          //     "scope": ["property.dart"],
+          //     "settings": { "foreground": "#EACCF0" }
+          //   },
+          //   {
+          //     "name": "interpolated exp",
+          //     "scope": ["string.interpolated.expression.dart"],
+          //     "settings": { "foreground": "#AAB2EE" }
+          //   },
+          //   {
+          //     "name": "PrimitiveKeywords", // Void
+          //     "scope": ["storage.type.primitive.dart"],
+          //     "settings": { "foreground": "#BC8EDF" }
+          //   },
+            
+          ],
+        },
     },
 
     "editor.semanticHighlighting.enabled": true,
@@ -581,16 +653,30 @@
           "source.interpolation": "#9e247e",
           "variable.declaration":"#9e2449",
           "variable": "#9e2449",
-          //"property.instance": "#135064", 
-          "property.instance": "#2a4669", 
-          "property.declaration": "#3c618d"
+          "property.instance": "#135064"
         },
+      },
+      "[Night Owl]": {
+        "rules": {
+          "string": "#88c38c",
+          "variable.declaration":"#d3d6ce",
+          "variable": "#d3d6ce",
+          //"variable.language": "#40a3ae",
+          "keyword.modifier": "#40a3ae",
+          "keyword.control": "#C792EA",
+          "number": "#6ec4d3", 
+          "builtinConstant": "#6ec4d3", 
+          //"property.instance": "#b7c496",
+          "enumMember": "#bfd28e", 
+          //"property": "#bcc99c", 
+          "boolean": "#6ec4d3"
+        }
       }
     },
 
     
     "yaml.schemas": {
-      "file:///c%3A/Users/nipuns/.vscode/extensions/atlassian.atlascode-3.0.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+      "file:///Users/nipunshah/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     "errorLens.enabledDiagnosticLevels": [
       "error",
@@ -605,6 +691,9 @@
     },
     "sync.gist": "5705732ddf8c55505a432e3336a650b5",
     "git.confirmSync": false,
-    "workbench.colorTheme": "GitHub Light",
+    "editor.indentSize": "tabSize",
+    "terminal.integrated.fontSize": 15,
+    "editor.codeActionsOnSave": {},
+    "workbench.colorTheme": "Night Owl",
     //"git.path":["/Users/nipuns/AppData/Local/Programs/Git/mingw64/bin/git.exe"],
 }
